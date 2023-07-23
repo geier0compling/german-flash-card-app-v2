@@ -1,0 +1,6 @@
+nltk
+spacy
+requests
+streamlit
+beautifulsoup4
+googletrans

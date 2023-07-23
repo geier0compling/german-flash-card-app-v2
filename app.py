@@ -8,10 +8,7 @@ def app():
         flash_cards = generate_flash_cards(text_input)
 
         # Print flash cards
-        st.markdown("Nouns:")git init
-git add .
-git commit -m "Initial commit"
-
+        st.markdown("Nouns:")
         st.markdown(flash_cards["NOUN"])
         st.markdown("Verbs:")
         st.markdown(flash_cards["VERB"])
