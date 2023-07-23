@@ -9,7 +9,7 @@ from nltk.tokenize import word_tokenize
 # Load Spacy's German model
 nlp = spacy.load('de_core_news_md')
 
-text = """So stand Grenouille wohl eine Viertelstunde im Schoß der Menge, ein fremdes Kind gegen die scheinheilige Brust gedrückt."""
+text = """ So stand Grenouille wohl eine Viertelstunde im Schoß der Menge, ein fremdes Kind gegen die scheinheilige Brust gedrückt."""
 doc = nlp(text)
 
 # Initialize the dictionary of lists
