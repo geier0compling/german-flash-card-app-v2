@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 from german_flash_card_def_function import generate_flash_cards
 import spacy
-print(spacy.util.get_lang_class('de_core_news_md'))
 
 def app():
     text_input = st.text_area("Paste your text here:")
