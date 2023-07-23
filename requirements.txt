@@ -4,3 +4,4 @@ requests
 streamlit
 beautifulsoup4
 googletrans
+de_core_news_md
