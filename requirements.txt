@@ -3,4 +3,5 @@ requests
 streamlit
 beautifulsoup4
 googletrans
-spacy
+spacy>=3.0.0,<4.0.0
+de_core_news_md>=3.0.0,<4.0.0
