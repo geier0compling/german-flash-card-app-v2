@@ -33,17 +33,6 @@ def generate_flash_cards(text):
         if token.pos_ in tagged_words_dict:
             tagged_words_dict[token.pos_].append(token.text)
 
-    # The rest of the code remains the same
-    print("Nouns:", tagged_words_dict["NOUN"])
-    print("Verbs:", tagged_words_dict["VERB"])
-    print("Adjectives:", tagged_words_dict["ADJ"])
-    print("Pronouns:", tagged_words_dict["PRON"])
-    print("Punctuation:", tagged_words_dict["PUNCT"])
-    print("Adverbs:", tagged_words_dict["ADV"])
-    print("Auxiliary:", tagged_words_dict["AUX"])
-    print("Adpositions:", tagged_words_dict["ADP"])
-    print("Determiners:", tagged_words_dict["DET"])
-
     # Load Spacy's German model
     nlp = spacy.load('de_core_news_md')
 
@@ -67,16 +56,6 @@ def generate_flash_cards(text):
             lemma = nlp(word)[0].lemma_
             # Add the lemma to the correct list
             lemmatized_words_dict[tag].append(lemma)
-
-    print("Nouns:", lemmatized_words_dict["NOUN"])
-    print("Verbs:", lemmatized_words_dict["VERB"])
-    print("Adjectives:", lemmatized_words_dict["ADJ"])
-    print("Pronouns:", lemmatized_words_dict["PRON"])
-    print("Punctuation:", lemmatized_words_dict["PUNCT"])
-    print("Adverbs:", lemmatized_words_dict["ADV"])
-    print("Auxiliary:", lemmatized_words_dict["AUX"])
-    print("Adpositions:", lemmatized_words_dict["ADP"])
-    print("Determiners:", lemmatized_words_dict["DET"])
 
     # Set up the Google Cloud Translation API client
     # create translator object
